@@ -725,7 +725,12 @@ const notice =
                 collection(db, "animes"),
                 anime
             );
+btn.disabled = false;
+btn.innerHTML = "✅ Updated!";
 
+setTimeout(() => {
+    btn.innerHTML = "Update Anime";
+}, 500);
             alert("Anime Added Successfully!");
 
         }

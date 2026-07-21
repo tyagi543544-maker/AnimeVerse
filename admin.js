@@ -426,7 +426,7 @@ loadForEdit();
 // ==========================
 
 document.getElementById("publish").addEventListener("click", async () => {
-const btn = document.getElementById("publish");
+const btn = document.getElementById("publishBtn");
 btn.disabled = true;
 
 btn.innerHTML = '<span class="loader"></span>Updating...';
@@ -653,7 +653,9 @@ const notice =
                                 episodeInputs.length - 1
                             ].dataset.episode
                         ),
+                        
  notice,
+                        
                         episodes,
 
                         zip: {
@@ -714,9 +716,7 @@ const notice =
                 doc(db, "animes", editId),
                 anime
             );
-btn.disabled = false;
-
-btn.innerHTML = "✅ Update Anime";
+            
             alert("Anime Updated Successfully!");
 
         } else {

@@ -9,7 +9,8 @@ import {
 import { auth } from "./firebase.js";
 
 import {
-    onAuthStateChanged
+    onAuthStateChanged,
+    signOut
 } from "https://www.gstatic.com/firebasejs/12.16.0/firebase-auth.js";
 onAuthStateChanged(auth, (user) => {
 
@@ -136,12 +137,6 @@ document.getElementById("searchBox").addEventListener("input", e => {
     });
 
 });
-window.editAnime = function(id){
-
-    window.location.href = `admin.html?edit=${id}`;
-
-}
-
 window.editAnime = function(id){
 
     window.location.href = `admin.html?edit=${id}`;

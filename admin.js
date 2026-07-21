@@ -247,7 +247,7 @@ class="zip1080"
 data-language="${language.name}"
 placeholder="${language.name} 1080P ZIP Link">
 
-textarea
+<textarea
 class="packNotice"
 placeholder="📢 Notice / Warning (Optional)"
 rows="3"></textarea>
